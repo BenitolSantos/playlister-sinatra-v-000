@@ -10,7 +10,6 @@ class GenresController < ApplicationController
     @genres = Genre.all
     @genre = Genre.find_by_slug(params["slug"])
     @artists = Artist.all
-    @songs = Songs.all
     erb :"/genres/show"
   end
 end
