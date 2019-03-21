@@ -10,5 +10,5 @@
 <h1>All artists of this genre</h1>
 <br>
 <%@genre.artists.each_with_index do |artist,index|%>
-<h1>genre_<%=index+1%>_name</h1><a href="/artist/<%=artist.slug%>"><%= artist.name %></a>
+<h1>genre_<%=index+1%>_name</h1><a href="/artists/<%=artist.slug%>"><%= artist.name %></a>
 <%end%>
